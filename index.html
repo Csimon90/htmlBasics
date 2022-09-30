@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    "head" element used to hold metadata info that isn't seen on the web page, but is useful for the website to work
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <!-- 
+        3 ways to style HTML files:
+
+        - <link> tag referencing a css file
+        -<style> tag used to apply styling to html elements directly inside of <head> tag
+        - using the style property in the html element to apply
+    -->
+    <link rel="stylesheet" href="style.css">
+    <title>Music Blog</title>    
+</head>
+<!-- "body" tag hold elements that will be displayed on the web browser -->
+<!-- 
+    (FOR BELOW):
+    margin:top/bottom left/right
+ -->
+<body>
+    <header>
+        <!-- h1 - h6  -->
+        <h1>Music Blog</h1>
+        
+        <nav>
+            <!-- Emmet shortcut:
+            
+            ul>(li>span{Home})+(li>a)
+        -->
+            <ul>
+                <li><span>Home</span></li>
+                <!-- "HTML Attributes
+                    
+                    -keywords written inside html opening tag that allow for different specification/functionality to the associated HTML element
+                " -->
+                <li><a href="#Main">Welcome</a></li>
+                <li><a href="#aside">Favorite Album</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome</h2>
+            <!-- 
+                <main> tag: Can ONLY BE ONE (specifies "main" content of page)
+                            CANNOT be nested inside of "header", "nav", "article", "aside", "footer" elements
+            -->
+        <main id="main">
+            <article>
+                <p>There is no god, Summer; gotta rip that band-aid off now you'll thank me later. Puh rum pum pow! I don't get it and I don't need to. I don't discuss problems. I incinerate them!
+                    Rikitikitavi, [rid]! I can finally go on that trip I've been talking about. Man, that guy is the Red Grin Grumbold of pretending
+                    he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really
+                    are your father's children. Think for yourselves, don't be sheep. Must… continue… moving… in… ways… that… lead… to… dying… with… you.</p>
+                <p>Im Pickle RICK!!!!</p>
+            </article>
+            <aside id="aside">
+                <h2>Favorite Albums</h2>
+
+                <div class="albumContainer">
+
+                    <a href="./assets/Adele21.jpg" target="_blank"><img src="./assets/Adele21.jpg" alt="Adele 21"></a>
+                    <a href="./assets/EarthaKittCestSIBon.jpg" target="_blank"><img src="./assets/EarthaKittCestSIBon.jpg" alt="Earth Kitt C'est Si Bon"></a>
+                    <a href="./assets/FMacRumours.png" target="_blank"><img src="./assets/FMacRumours.png" alt="Fleetwood Mac Rumors"></a>
+                    <a href="./assets/KarenSouzsEssentials.jpg" target="_blank"><img src="./assets/KarenSouzsEssentials.jpg" alt="Karen Souza Essentials"></a>
+                </div>
+
+
+            </aside>
+        </main>
+    </section>
+    <footer id="footer">
+        <p>
+            random filler to demonstrate footer component inclusion
+        </p>
+
+    </footer>
+</body>
+</html>
