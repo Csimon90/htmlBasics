@@ -1,0 +1,97 @@
+<!-- You can probably see HTML beginning to come together. In this file, we used h1, h2, p, div and, from the last lesson, input. We're describing elements with a more detail as well, using attributes on the input fields and specifying the type we want rendered. Result: we're able to code a text box here, a checkbox there, and radio boxes in other places.
+
+With a solid grasp on these concepts, we're able to package elements inside of a <form> to describe a coherent collection of elements. <fieldset> empowers us to group related elements tightly inside a form, and also gives us access to the <legend> tag, which defines a caption for the<fieldset> element.
+
+Finally, the <textarea> tag provides a multi-line text input field. It's possible to specify the number of rows and columns within a given <textarea>. However, as you can see from our example, it's not necessary. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <h2>Basic Form with Input Fields</h2>
+    <div>
+        <form>
+            <p>
+                <label>Customer Name: <input /></label>
+            </p>
+            <p>
+                <label>Street Address: <input /></label>
+            </p>
+            <p>
+                <label>City: <input /></label>
+            </p>
+            <p>
+                <label>Area Code: <input /></label>
+            </p>
+            <p>
+                <label>Telephone: <input /></label>
+            </p>
+        </form>
+    </div>
+    <!-- This time we've introduced both the fieldset tag as well as the legend tag. Make sure to refresh the code to see what these elements introduce.
+
+You should see a border around the new input fields you've added as well as the content from the legend tag at the top of the fieldset.
+
+We've also changed the way we're structuring the label tags. It's the same layout as the previous form, but this time we're spreading the content out on to two different lines instead of one. This does not change the content that gets displayed. It just makes the code easier to read for us! -->
+    <div style="border: solid 2px black; padding: .5rem;">
+        <form>
+            <fieldset>
+                <legend>Customer Information</legend>
+                <p>
+                    <label>Customer Name: <input name="name" /></label>
+                </p>
+                <p>
+                    <label>Telephone: <input type="tel" name="tel" /></label>
+                </p>
+                <p>
+                    <label>Email Address: <input type="email" name="email" /></label>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    <br />
+
+    <!--Now we're seeing how we can use the for attribute along with the id attribute inside the input. This allows us to decouple the input and the label tags. Both of these methods are acceptable as well as come with their own pros and cons.
+
+Let's go ahead and add another fieldset, this time using checkboxes instead of radio buttons. Add this underneath your previous Size fieldset.  -->
+<fieldset>
+    <legend>Size</legend>
+    <p>
+        <input type="radio" name="size" id="size0" value="size0" />
+        <label for="size0">Humongous</label>
+    </p>
+    <p>
+        <input type="radio" name="size" id="size1" value="size1" />
+        <label for="size1">Double-Humongous</label>
+    </p>
+    <p>
+        <input type="radio" name="size" id="size2" value="size2" />
+        <label for="size2">Triple-Humongous</label>
+    </p>
+    <p>
+        <input type="radio" name="size" id="size3" value="size3" />
+        <label for="size3">Just A Small, Please</label>
+    </p>
+</fieldset>
+<!-- Let's wrap up our form with one more fieldset for good measure. This time we'll include a submit button. Add this code underneath the Fixins fieldset. -->
+<br />
+<fieldset>
+    <legend>Delivery Instructions</legend>
+    <p>
+        <label for="time">Preferred Delivery Time:</label>
+        <input id="time" name="time" type="time" min="11:00" max="21:00" step="900">
+    </p>
+    <p>
+        Delivery Instructions:
+        <textarea name="instructions"></textarea>
+    </p>
+    <p>
+        <button type="submit">Submit Order</button>
+    </p>
+</fieldset>
+</body>
+</html>

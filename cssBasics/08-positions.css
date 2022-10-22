@@ -1,0 +1,34 @@
+.wrapper{
+    margin: 5px;
+  }
+
+  .nav {
+    position: fixed;
+  }
+
+  .nav {
+    position: fixed;
+    /* top and right numbers represent distance from that respective edge. 0=flush with edge */
+    top: 0;
+    right: 0px;
+    width: 250px;
+    background-color: lightgray;
+    border: 3px solid navy;
+  }
+
+  .lotsoftext {
+    /* vh is a unit that represents 1/100th of the view height. */
+    /* This means 150vh is basically 150% of the window height. */
+    height: 150vh;
+    width: 75%;
+    background-color: lightseagreen;
+  }
+
+  .positioning {
+    width: 75%;
+    background-color: lightgray;
+  }
+  
+  .positioning h1 {
+    text-align: center;
+  }

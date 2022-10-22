@@ -1,0 +1,52 @@
+<!-- A section is like a div, but is instead used for semantic groupings. They help the browser understand there is a particular grouping. Functionally they will act the same.
+
+The section tag defines a section with purpose in a document, such as chapters, headers, footers, or any other section of the document. -->
+
+<!--Introduced in HTML5, the section tag allows us to avoid "divitis." Having a variety of ways to separate code is useful, but the real advantage is content inside a <section> is grouped to indicate a common theme. A <section> is usually indicated by a heading (<h1>-<h6>) as a nested or child element. This contrasts with <div> where the elements contained within it are only related by being children of the <div> and by attributes assigned to the <div>.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sections</title>
+</head>
+<body>
+    <h1>BRONZE</h1>
+    <section>
+        <h3>Welcome to the Donut Store</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sed quis dolorem, perferendis cumque
+            aspernatur omnis, provident eligendi sunt delectus optio saepe, perspiciatis odio expedita illum sequi.
+            Praesentium, obcaecati blanditiis!
+        </p>
+    </section>
+
+    <h1>SILVER</h1>
+    <section style="width: 50%; background-color: lightgreen;">
+        <h3>Welcome to the Donut Store</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab atque esse, iste perspiciatis neque
+            ducimus itaque impedit sunt molestias praesentium id necessitatibus aut ipsum sapiente quasi, placeat
+            provident vitae!
+        </p>
+    </section>
+
+    <h1>GOLD</h1>
+    <section>
+        <section style="width: 70%; float: left; background-color: red;">
+            <h3>Welcome to the Donut Store</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita minus magni quasi voluptatum iste
+                enim natus, perspiciatis tempore modi rem perferendis voluptas dolorem nihil nisi maiores dolorum,
+                laboriosam laudantium repellendus.
+            </p>
+        </section>
+        <section style="width: 30%; float: right; background-color: yellow;">
+            <h3>Another Section</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe optio dolor similique eaque beatae nobis
+                accusamus in assumenda, impedit, placeat commodi ad totam dicta itaque fugiat hic delectus minus
+                possimus?
+            </p>
+        </section>
+    </section>
+</body>
+</html>

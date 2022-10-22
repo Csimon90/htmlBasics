@@ -1,0 +1,16 @@
+<!-- We use the inline frame (iframe) to embed another document inside of an HTML document. This is a straight-forward way to describe the <iframe>. Embedding third-party media is a common use of <iframe> and we'll show you how to insert a YouTube video into your own HTML. -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IFrame</title>
+</head>
+<body>
+    <h1>IFrames</h1>
+    <p>
+        An iframe allows us to embed HTML documents inside HTML documents!
+    </p>
+    <iframe src="https://www.youtube.com/embed/owsfdh4gxyc" frameborder="0" width="560" height="315" allowfullscreen>
+    </iframe>
+</body>
+</html>
+<!-- It may seem strange <iframe> isn't a void element, similar to the <img /> tag. The reason is we need compatibility with older versions of web browsers. If you insert text between the opening/closing tags, you'll discover the text doesn't appear when HTML renders the page. The browser ignores the content. <iframe> can still be styled as we have done with the width and height attributes. However, you'll want to consider how your styling may be rendered on older browsers. -->
